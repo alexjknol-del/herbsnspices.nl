@@ -37,7 +37,7 @@ def pot(a,b):
             f'<circle cx="28" cy="27" r="1.8" fill="{b}" opacity=".7"/>'
             f'<circle cx="25" cy="34" r="1.6" fill="{b}" opacity=".7"/></svg>')
 
-NAV=[("Home","/"),("Kruiden & specerijen","/specerijen/"),("Keukengidsen","/gidsen/"),("Nieuws","/nieuws/"),("Over","/over/"),("Contact","/contact/")]
+NAV=[("Home","/"),("Kruiden & specerijen","/specerijen/"),("Keukengidsen","/gidsen/"),("Nieuws","/nieuws/"),("Over","/over/"),("Partners","/partners/"),("Contact","/contact/")]
 
 def head(title,desc,path,ld=None):
     can=BASE+path
@@ -398,6 +398,24 @@ def p_redactie():
 </div></section>"""
     write(path,h+footer())
 
+
+def p_partners():
+    path="/partners/"; c=[("Home","/"),("Partners",path)]
+    ld=[crumb(c),{"@context":"https://schema.org","@type":"WebPage","@id":BASE+path,"url":BASE+path,"name":"Partners","inLanguage":"nl-NL"}]
+    h=head("Partners | "+SITE,"Partners en bronnen waar Herbs n Spices naar verwijst.",path,ld)+crumbs_html(c)
+    h+=f"""<section class="section"><div class="wrap prose">
+  <span class="eyebrow">Partners</span><h1>Partners en bronnen</h1>
+  <p class="lead">Herbs n Spices verwijst hier naar externe partners en bronnen.</p>
+  <div class="grid" style="grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px">
+  <div class="card"><h3>Tatanka</h3><p>Tatanka is een Nederlandse smartshop met paddo growkits en smartshopproducten, met uitleg per soort en een overzicht van het aanbod.</p><p style="margin-top:10px"><a href="https://www.tatanka.nl/nl/mckennaii-magic-mushroom-paddo-grow-kit/" target="_blank" rel="noopener">McKennaii magic mushroom growkit</a></p></div>
+<div class="card"><h3>Smartific</h3><p>Smartific is een Nederlandse smartshop met magic truffels, growkits en smartshopproducten, inclusief productinformatie per artikel.</p><p style="margin-top:10px"><a href="https://smartific.nl/smartshop/afrodisiaca/spaanse-vlieg/" target="_blank" rel="noopener">Spaanse vlieg kopen</a></p></div>
+<div class="card"><h3>The Headshop</h3><p>The Headshop is een Nederlandse headshop met kratom en smartshopproducten, met een uitgebreid overzicht per soort en sterkte.</p><p style="margin-top:10px"><a href="https://www.headshop.nl/nl/red-bali-kratom/" target="_blank" rel="noopener">Red Bali Kratom</a></p></div>
+<div class="card"><h3>Paddo.shop</h3><p>Paddo.shop is een Nederlandse webshop gespecialiseerd in paddo growkits, met uitleg per kweekset en kweekinstructies.</p><p style="margin-top:10px"><a href="https://www.paddo.shop/growkits/" target="_blank" rel="noopener">Paddo growkit</a></p></div>
+<div class="card"><h3>Magictruffels.shop</h3><p>Magictruffels.shop is een Nederlandse webshop voor magic truffels, met een overzicht per soort en de werking ervan.</p><p style="margin-top:10px"><a href="https://www.magictruffels.shop/mushrocks/" target="_blank" rel="noopener">mushrocks</a></p></div>
+</div>
+</div></section>"""
+    write(path,h+footer())
+
 def p_contact():
     path="/contact/"; c=[("Home","/"),("Contact",path)]
     ld=[crumb(c),{"@context":"https://schema.org","@type":"ContactPage","@id":BASE+path,"url":BASE+path,"name":"Contact","inLanguage":"nl-NL"}]
@@ -443,7 +461,7 @@ def p_404():
     open(os.path.join(OUT,"404.html"),"w",encoding="utf-8").write(h+footer())
 
 def extras():
-    u=["/","/over/","/redactie/","/specerijen/","/gidsen/","/nieuws/","/contact/","/privacybeleid/","/cookiebeleid/"]
+    u=["/","/over/","/redactie/","/specerijen/","/gidsen/","/nieuws/","/partners/","/contact/","/privacybeleid/","/cookiebeleid/"]
     u+= [f"/specerijen/{s['slug']}/" for s in SPECERIJEN]+[f"/gidsen/{g['slug']}/" for g in GIDSEN]+[f"/nieuws/{a['slug']}/" for a in ARTIKELEN]
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{x}</loc></url>\n" for x in u)+"</urlset>\n"
     open(os.path.join(OUT,"sitemap.xml"),"w").write(sm)
@@ -462,7 +480,7 @@ def main():
     for g in GIDSEN: p_gids(g)
     p_nieuws()
     for a in ARTIKELEN: p_art(a)
-    p_contact(); p_legal(); p_404(); extras()
+    p_contact(); p_partners(); p_legal(); p_404(); extras()
     print("Build klaar in", OUT)
 
 if __name__=="__main__": main()
