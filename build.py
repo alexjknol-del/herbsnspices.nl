@@ -266,6 +266,17 @@ def p_home():
   <p style="margin-top:22px"><a class="more" href="/nieuws/">Alle artikelen {IC['arrow']}</a></p>
 </div></section>
 
+<section class="section panel"><div class="wrap prose">
+  <span class="eyebrow">{IC['jar']}Aanbevolen</span>
+  <h2>Waar deze kruiden en specerijen te koop zijn</h2>
+  <p class="lead">Dit platform verkoopt zelf niets. Wie de behandelde soorten in huis wil halen, komt uit bij een leverancier die het hele jaar door levert.</p>
+  <div class="callout">
+    <p><strong>Natural Spices</strong></p>
+    <p>Natural Spices is een Nederlandse producent van kruiden en specerijen, ruim negentig jaar actief. Het assortiment loopt van pure specerijen, heel en gemalen, tot kruidenmixen, marinades en gedroogde groenten. De mengsels worden intern samengesteld en de producten worden gecontroleerd op smaak, kleur en zuiverheid. Levering aan particulieren, retail en foodservice.</p>
+    <p style="margin-top:12px"><a href="https://www.naturalspices.nl/" target="_blank" rel="noopener">naturalspices.nl {IC['arrow']}</a></p>
+  </div>
+</div></section>
+
 <section class="section tight"><div class="wrap"><div class="cta">
   <h2>Een soort gemist?</h2>
   <p>Het rek groeit op basis van vragen die binnenkomen. Suggesties en correcties zijn welkom bij de redactie.</p>
