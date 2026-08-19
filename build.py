@@ -128,6 +128,7 @@ def blocks(bs):
         elif b[0]=="h2": o.append(f"<h2>{esc(b[1])}</h2>")
         elif b[0]=="ul": o.append("<ul>"+"".join(f"<li>{esc(x)}</li>" for x in b[1])+"</ul>")
         elif b[0]=="callout": o.append(f'<div class="callout"><p>{esc(b[1])}</p></div>')
+        elif b[0]=="plink": o.append(f"<p>{b[1]}</p>")
     return "".join(o)
 
 def byline():
@@ -205,6 +206,26 @@ GIDSEN=[
 ]
 
 ARTIKELEN=[
+ {"slug":'kruidenmix-zelf-samenstellen','titel':'Een kruidenmix zelf samenstellen: verhoudingen en volgorde',"cat":'Achtergrond',"datum":'2026-08-19',"datum_nl":'19 augustus 2026','lees':5,
+  'resume':'Een goede mix heeft twee of drie dragers en een accent, niet acht ingrediënten in gelijke delen.',
+  "body":[
+  ('p', 'Zelf mengen begint meestal met een recept dat acht ingrediënten opsomt zonder verhouding. Het resultaat smaakt vervolgens vol en tegelijk nergens naar, omdat geen enkel ingrediënt genoeg ruimte krijgt.'),
+  ('h2', 'De opbouw van een mix'),
+  ('p', 'Een bruikbare structuur bestaat uit drie lagen. Een basis die volume geeft, zoals paprikapoeder of gemalen koriander. Een of twee dragers die de richting bepalen, bijvoorbeeld komijn of oregano. En een accent in kleine hoeveelheid: kaneel, kruidnagel, gerookt zout.'),
+  ('p', 'In verhouding komt dat vaak neer op vier delen basis, twee delen drager en een half deel accent. Wie het accent gelijkstelt aan de drager, krijgt een mix die in één noot blijft hangen.'),
+  ('h2', 'Volgorde en bewerking'),
+  ('ul', ['Hele zaden kort roosteren voordat ze worden gemalen.', 'Gedroogde bladkruiden pas na het malen toevoegen, anders vergruizen ze te fijn.', 'Zout apart houden en per gerecht doseren.', 'Suiker alleen toevoegen bij mixen voor de grill, en dan laat in het proces.']),
+  ('plink', 'Dat laatste heeft een praktische reden: suiker verbrandt bij hoge temperatuur en geeft een bittere korst. In een rub voor lage temperatuur is het juist wat de korst maakt. De losse componenten waarmee gemengd wordt staan bij <a href="https://www.naturalspices.nl/kruiden-specerijen" rel="nofollow">Natural Spices</a>.'),
+  ('h2', 'Kwaliteit van de losse componenten'),
+  ('p', 'Een mix is nooit beter dan het zwakste bestanddeel. Gemalen specerijen verliezen hun vluchtige olie binnen maanden, en een paprikapoeder dat een jaar open staat, draagt vooral nog kleur bij en geen smaak.'),
+  ('plink', 'Kopen in kleinere hoeveelheden en vaker vervangen levert meer op dan een grote voorraad. Of een biologische uitvoering daarbij smaakverschil geeft, is een aparte vraag; de achtergrond daarvan staat op <a href="https://www.naturalspices.nl/blog/biologische-of-normale-kruiden-wat-is-het-verschil" rel="nofollow">naturalspices.nl</a>.'),
+  ('h2', 'Bewaren'),
+  ('p', 'Donker, droog en niet boven het fornuis. Warmte en damp zijn de twee factoren die een mix het snelst vlak maken, en de plank naast de afzuigkap is precies de verkeerde plek.'),
+  ('p', 'Noteer de datum van mengen op het potje. Zonder datum blijft een zelfgemaakte mix jaren staan, en de teleurstelling over het resultaat wordt dan ten onrechte aan het recept toegeschreven.'),
+  ('h2', 'Testen in kleine hoeveelheid'),
+  ('p', 'Meng een nieuwe verhouding eerst in een hoeveelheid van een eetlepel en proef die op een neutrale drager, bijvoorbeeld een stukje aardappel of een lepel yoghurt. Op die manier is de mix te beoordelen zonder dat een heel gerecht als test dient.'),
+  ('p', 'Noteer de verhouding meteen. Een mix die goed uitpakt en waarvan de samenstelling niet is opgeschreven, is bij de volgende poging vrijwel nooit te reconstrueren, omdat het verschil juist in de kleine hoeveelheden zit.'),
+ ]},
  {"slug":"verse-of-gedroogde-kruiden","titel":"Verse of gedroogde kruiden: wanneer welke","cat":"Techniek","datum":"2026-07-08","datum_nl":"8 juli 2026","lees":4,
   "resume":"Vers is niet automatisch beter. Het moment van toevoegen bepaalt vaak meer dan de vorm.",
   "body":[("p","De aanname dat verse kruiden altijd de voorkeur verdienen, houdt geen stand in de keuken. Bepalend is hoe lang een kruid meekookt en welke aromastoffen het bevat."),
