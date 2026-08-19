@@ -28,7 +28,7 @@ img{max-width:100%;display:block}
 .nav a.navlink:hover{border-bottom-color:var(--paprika)}
 .menu-toggle{display:none}
 .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.94rem;padding:12px 22px;border-radius:10px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
-.btn svg{width:16px;height:16px}
+a svg{width:15px;height:15px;vertical-align:-2px}.btn svg{width:16px;height:16px}
 .btn-green{background:var(--green);color:#fff;border-color:var(--green)}
 .btn-green:hover{background:var(--green-deep)}
 .btn-paprika{background:var(--paprika);color:#fff;border-color:var(--paprika)}
