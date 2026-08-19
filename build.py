@@ -273,7 +273,7 @@ def p_home():
   <div class="callout">
     <p><strong>Natural Spices</strong></p>
     <p>Natural Spices is een Nederlandse producent van kruiden en specerijen, ruim negentig jaar actief. Het assortiment loopt van pure specerijen, heel en gemalen, tot kruidenmixen, marinades en gedroogde groenten. De mengsels worden intern samengesteld en de producten worden gecontroleerd op smaak, kleur en zuiverheid. Levering aan particulieren, retail en foodservice.</p>
-    <p style="margin-top:12px"><a href="https://www.naturalspices.nl/" target="_blank" rel="noopener">naturalspices.nl {IC['arrow']}</a></p>
+    <p style="margin-top:12px"><a href="https://www.naturalspices.nl/" target="_blank" rel="noopener">naturalspices.nl</a></p>
   </div>
 </div></section>
 
