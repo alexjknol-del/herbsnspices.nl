@@ -444,6 +444,7 @@ def p_partners():
 <div class="card"><h3>The Headshop</h3><p>The Headshop is een Nederlandse headshop met kratom en smartshopproducten, met een uitgebreid overzicht per soort en sterkte.</p><p style="margin-top:10px"><a href="https://www.headshop.nl/nl/red-bali-kratom/" target="_blank" rel="noopener">Red Bali Kratom</a></p></div>
 <div class="card"><h3>Paddo.shop</h3><p>Paddo.shop is een Nederlandse webshop gespecialiseerd in paddo growkits, met uitleg per kweekset en kweekinstructies.</p><p style="margin-top:10px"><a href="https://www.paddo.shop/growkits/" target="_blank" rel="noopener">Paddo growkit</a></p></div>
 <div class="card"><h3>Magictruffels.shop</h3><p>Magictruffels.shop is een Nederlandse webshop voor magic truffels, met een overzicht per soort en de werking ervan.</p><p style="margin-top:10px"><a href="https://www.magictruffels.shop/mushrocks/" target="_blank" rel="noopener">mushrocks</a></p></div>
+<div class="card"><h3>Yuice.nl</h3><p>Yuice.nl biedt recepten en informatie over het zelf maken van kruidenmixen en specerijencombinaties, waaronder Caribbean spice.</p><p style="margin-top:10px"><a href="https://yuice.nl/caribbean-spice-kruiden-zelf-maken/" target="_blank" rel="noopener">Caribbean spice kruiden zelf maken</a></p></div>
 </div>
 </div></section>"""
     write(path,h+footer())
