@@ -446,7 +446,7 @@ def p_partners():
 <div class="card"><h3>Magictruffels.shop</h3><p>Magictruffels.shop is een Nederlandse webshop voor magic truffels, met een overzicht per soort en de werking ervan.</p><p style="margin-top:10px"><a href="https://www.magictruffels.shop/mushrocks/" target="_blank" rel="noopener">mushrocks</a></p></div>
 <div class="card"><h3>Yuice.nl</h3><p>Yuice.nl biedt recepten en informatie over het zelf maken van kruidenmixen en specerijencombinaties, waaronder Caribbean spice.</p><p style="margin-top:10px"><a href="https://yuice.nl/caribbean-spice-kruiden-zelf-maken/" target="_blank" rel="noopener">Caribbean spice kruiden zelf maken</a></p></div>
 <div class="card"><h3>Frecious</h3><p>Frecious maakt koudgeperste sappen en shots van verse groenten en fruit, zonder toevoegingen, als praktische aanvulling op een gezonde levensstijl.</p><p style="margin-top:10px"><a href="https://www.frecious.bio/detox/7-dagen" target="_blank" rel="noopener">Detox 7 dagen</a></p></div>
-<div class="card"><h3>Sem Serveert</h3><p>Sem Serveert verzorgt private dining, walking dinners en bbq-catering met een kok aan huis, waarbij het menu per gelegenheid wordt samengesteld.</p><p style="margin-top:10px"><a href="https://semserveert.nl/" target="_blank" rel="noopener">Sem Serveert</a></p></div>
+<div class="card"><h3>Sem Serveert</h3><p>Sem Serveert verzorgt private dining, walking dinners en bbq-catering met een kok aan huis, waarbij het menu per gelegenheid wordt samengesteld.</p><p style="margin-top:10px"><a href="https://semserveert.nl/kok-aan-huis-utrecht/" target="_blank" rel="noopener">kok aan huis Utrecht</a></p></div>
 </div>
 </div></section>"""
     write(path,h+footer())
