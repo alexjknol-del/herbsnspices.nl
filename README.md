@@ -20,3 +20,4 @@ De site komt in `site/`.
 
 Alle content staat als data bovenin `build.py`. Een item toevoegen betekent een blok toevoegen aan de
 betreffende lijst en opnieuw bouwen. De illustraties zijn eigen SVG's in `assets/`, geen foto's onder licentie.
+
